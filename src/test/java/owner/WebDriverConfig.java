@@ -4,7 +4,7 @@ package owner;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:${launch}.properties"
+        "classpath:${env}.properties"
 })
 public interface WebDriverConfig extends Config {
     @Key("browserstack.userName")
