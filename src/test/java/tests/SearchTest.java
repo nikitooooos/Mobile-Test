@@ -2,6 +2,7 @@ package tests;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.ArticlePage;
 import pages.OnboardingPage;
@@ -20,6 +21,7 @@ public class SearchTest extends TestBase {
     private final static String SEARCH_VALUE = "Amazon";
 
     @Test
+    @Tag("android")
     @Owner("Nikita Postnikov")
     @Feature("Поиск")
     @Severity(SeverityLevel.CRITICAL)

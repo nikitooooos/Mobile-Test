@@ -2,6 +2,7 @@ package tests;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.*;
 
@@ -19,6 +20,7 @@ public class AccountTest extends TestBase {
     private final static String EMAIL = "Email (Optional)";
 
     @Test
+    @Tag("android")
     @Owner("Nikita Postnikov")
     @Feature("Авторизация в Википедии")
     @Story("Страница Логина в Википедии")

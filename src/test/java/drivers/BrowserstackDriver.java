@@ -28,9 +28,9 @@ public class BrowserstackDriver implements WebDriverProvider {
         caps.setCapability("device", config.getDevice());
         caps.setCapability("os_version", config.getOS());
 
-        caps.setCapability("project", "First Java Project");
+        caps.setCapability("project", "QA_GURU_HOMEWORK");
         caps.setCapability("build", "browserstack-build-1");
-        caps.setCapability("name", "first_test");
+        caps.setCapability("name", "Wikipedia_Mobile_Tests");
 
         try {
             return new RemoteWebDriver(
